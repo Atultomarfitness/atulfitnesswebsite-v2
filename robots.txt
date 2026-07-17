@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://sprightly-basbousa-1a89de.netlify.app/sitemap.xml

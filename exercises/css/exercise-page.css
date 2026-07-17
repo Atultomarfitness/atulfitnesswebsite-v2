@@ -1,0 +1,5789 @@
+/* ==========================================================
+   ATUL TOMAR FITNESS
+   MASTER EXERCISE PAGE STYLESHEET
+========================================================== */
+
+
+/* ==========================================================
+   SECTION 02 : EXERCISE HERO
+========================================================== */
+
+
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
+.exercise-hero {
+
+    position: relative;
+
+    padding: 7rem 0;
+
+    overflow: hidden;
+
+}
+
+
+/* ==========================================================
+   HERO GRID
+========================================================== */
+
+.exercise-hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(380px, 480px);
+
+    align-items: center;
+
+    gap: 5rem;
+
+}
+
+
+/* ==========================================================
+   HERO CONTENT
+========================================================== */
+
+.exercise-hero-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 1.75rem;
+
+    min-width: 0;
+
+}
+
+
+/* ==========================================================
+   BREADCRUMB
+========================================================== */
+
+.exercise-breadcrumb {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 0.6rem;
+
+    margin: 0;
+
+    font-size: 0.95rem;
+
+    color: var(--gray);
+
+}
+
+
+.exercise-breadcrumb a {
+
+    transition: color 0.25s ease;
+
+}
+
+
+.exercise-breadcrumb a:hover {
+
+    color: var(--primary);
+
+}
+
+
+.exercise-breadcrumb-current {
+
+    color: var(--white);
+
+    font-weight: 600;
+
+}
+
+
+/* ==========================================================
+   EXERCISE BADGE
+========================================================== */
+
+.exercise-hero-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 0.75rem;
+
+    padding: 0.9rem 1.4rem;
+
+    border: 1px solid var(--border);
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    backdrop-filter: blur(12px);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+
+}
+
+
+.exercise-hero-badge:hover {
+
+    transform: translateY(-2px);
+
+    border-color: var(--primary);
+
+    background: rgba(37, 99, 235, 0.08);
+
+}
+
+
+.exercise-hero-badge img {
+
+    width: 22px;
+
+    height: 22px;
+
+}
+
+
+.exercise-hero-badge span {
+
+    color: var(--white);
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+}
+
+
+/* ==========================================================
+   HERO HEADING
+========================================================== */
+
+.exercise-hero-heading {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+}
+
+
+.exercise-hero-heading h1 {
+
+    max-width: 12ch;
+
+    margin: 0;
+
+    line-height: 1.05;
+
+}
+
+
+/* ==========================================================
+   HERO TAGLINE
+========================================================== */
+
+.exercise-hero-tagline {
+
+    max-width: 32ch;
+
+    margin: 0;
+
+    color: var(--primary);
+
+    font-size: 1.35rem;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+
+}
+
+
+/* ==========================================================
+   HERO DESCRIPTION
+========================================================== */
+
+.exercise-hero-description {
+
+    max-width: 62ch;
+
+    margin: 0;
+
+    color: var(--gray);
+
+    line-height: 1.9;
+
+}
+
+
+/* ==========================================================
+   HERO HIGHLIGHTS
+========================================================== */
+
+.exercise-hero-highlights {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+    margin-top: 0.5rem;
+
+}
+
+
+.exercise-hero-highlight {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    padding: 0.9rem 1rem;
+
+    border: 1px solid transparent;
+
+    border-radius: var(--radius-medium);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+
+}
+
+
+.exercise-hero-highlight:hover {
+
+    transform: translateX(6px);
+
+    border-color: rgba(37, 99, 235, 0.18);
+
+    background: rgba(255, 255, 255, 0.025);
+
+}
+
+
+.exercise-hero-highlight .icon-circle {
+
+    flex-shrink: 0;
+
+    width: 52px;
+
+    height: 52px;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+.exercise-hero-highlight:hover .icon-circle {
+
+    transform: translateY(-2px);
+
+}
+
+
+.exercise-hero-highlight span {
+
+    color: var(--white);
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    line-height: 1.5;
+
+}
+
+
+/* ==========================================================
+   HERO ACTIONS
+========================================================== */
+
+.exercise-hero-actions {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-top: 0.75rem;
+
+}
+
+
+.exercise-hero-actions a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 180px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.exercise-hero-actions a:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+/* ==========================================================
+   HERO MEDIA
+========================================================== */
+
+.exercise-hero-media {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2rem;
+
+    min-width: 0;
+
+}
+
+
+/* ==========================================================
+   HERO IMAGE CARD
+========================================================== */
+
+.exercise-hero-image-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    margin: 0;
+
+    padding: 1rem;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-large);
+
+    background: var(--card);
+
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+
+}
+
+
+.exercise-hero-image-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: var(--primary);
+
+    box-shadow: 0 32px 70px rgba(37, 99, 235, 0.16);
+
+}
+
+
+.exercise-hero-image-card img {
+
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+
+    border-radius:
+        calc(var(--radius-large) - 0.35rem);
+
+    transition: transform 0.6s ease;
+
+}
+
+
+.exercise-hero-image-card:hover img {
+
+    transform: scale(1.04);
+
+}
+
+
+/* ==========================================================
+   EXERCISE SPECIFICATIONS
+========================================================== */
+
+.exercise-specifications {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 1rem;
+
+}
+
+
+/* ==========================================================
+   SPECIFICATION CARD
+========================================================== */
+
+.exercise-specification-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    padding: 1.1rem;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-medium);
+
+    background: var(--card);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.exercise-specification-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: var(--primary);
+
+    box-shadow: 0 18px 40px rgba(37, 99, 235, 0.12);
+
+}
+
+
+.exercise-specification-card .icon-circle {
+
+    flex-shrink: 0;
+
+    width: 56px;
+
+    height: 56px;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+.exercise-specification-card:hover .icon-circle {
+
+    transform: scale(1.08);
+
+}
+
+
+/* ==========================================================
+   SPECIFICATION CONTENT
+========================================================== */
+
+.exercise-specification-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.35rem;
+
+    min-width: 0;
+
+}
+
+
+.exercise-specification-content h2 {
+
+    margin: 0;
+
+    color: var(--gray);
+
+    font-size: 0.78rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+
+    line-height: 1.4;
+
+    text-transform: uppercase;
+
+}
+
+
+.exercise-specification-content p {
+
+    margin: 0;
+
+    color: var(--white);
+
+    font-size: 1.05rem;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : LARGE TABLETS
+========================================================== */
+
+@media (max-width: 1024px) {
+
+    .exercise-hero {
+
+        padding: 5rem 0;
+
+    }
+
+
+    .exercise-hero-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 4rem;
+
+    }
+
+
+    .exercise-hero-content {
+
+        max-width: 720px;
+
+    }
+
+
+    .exercise-hero-media {
+
+        width: 100%;
+
+        max-width: 720px;
+
+        margin: 0 auto;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : TABLETS
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .exercise-hero {
+
+        padding: 4rem 0;
+
+    }
+
+
+    .exercise-hero-grid {
+
+        gap: 3rem;
+
+    }
+
+
+    .exercise-breadcrumb {
+
+        font-size: 0.9rem;
+
+    }
+
+
+    .exercise-hero-heading h1 {
+
+        max-width: none;
+
+        font-size: clamp(2.4rem, 8vw, 3.5rem);
+
+    }
+
+
+    .exercise-hero-tagline {
+
+        max-width: none;
+
+        font-size: 1.15rem;
+
+    }
+
+
+    .exercise-hero-description {
+
+        max-width: none;
+
+        line-height: 1.8;
+
+    }
+
+
+    .exercise-hero-highlights {
+
+        gap: 0.85rem;
+
+    }
+
+
+    .exercise-hero-highlight {
+
+        padding: 0.85rem 1rem;
+
+    }
+
+
+    .exercise-hero-highlight .icon-circle {
+
+        width: 48px;
+
+        height: 48px;
+
+    }
+
+
+    .exercise-hero-actions {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .exercise-hero-actions a {
+
+        width: 100%;
+
+        min-width: 100%;
+
+    }
+
+
+    .exercise-hero-image-card {
+
+        padding: 0.75rem;
+
+    }
+
+
+    .exercise-specifications {
+
+        gap: 0.85rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : MOBILE
+========================================================== */
+
+@media (max-width: 576px) {
+
+    .exercise-hero {
+
+        padding: 3.5rem 0;
+
+    }
+
+
+    .exercise-hero-grid {
+
+        gap: 2.5rem;
+
+    }
+
+
+    .exercise-hero-badge {
+
+        padding: 0.75rem 1.15rem;
+
+    }
+
+
+    .exercise-hero-badge img {
+
+        width: 20px;
+
+        height: 20px;
+
+    }
+
+
+    .exercise-hero-heading {
+
+        gap: 0.75rem;
+
+    }
+
+
+    .exercise-hero-heading h1 {
+
+        font-size: 2.2rem;
+
+    }
+
+
+    .exercise-hero-tagline {
+
+        font-size: 1.05rem;
+
+    }
+
+
+    .exercise-hero-description {
+
+        font-size: 0.96rem;
+
+    }
+
+
+    .exercise-hero-highlight {
+
+        gap: 0.85rem;
+
+        padding: 0.8rem;
+
+    }
+
+
+    .exercise-hero-highlight .icon-circle {
+
+        width: 44px;
+
+        height: 44px;
+
+    }
+
+
+    .exercise-hero-highlight span {
+
+        font-size: 0.95rem;
+
+    }
+
+
+    .exercise-specifications {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .exercise-specification-card {
+
+        padding: 1rem;
+
+    }
+
+
+    .exercise-specification-card .icon-circle {
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : SMALL PHONES
+========================================================== */
+
+@media (max-width: 380px) {
+
+    .exercise-hero {
+
+        padding: 3rem 0;
+
+    }
+
+
+    .exercise-breadcrumb {
+
+        gap: 0.35rem;
+
+        font-size: 0.82rem;
+
+    }
+
+
+    .exercise-hero-heading h1 {
+
+        font-size: 2rem;
+
+    }
+
+
+    .exercise-hero-tagline {
+
+        font-size: 1rem;
+
+    }
+
+
+    .exercise-hero-description {
+
+        font-size: 0.92rem;
+
+    }
+
+
+    .exercise-hero-highlight {
+
+        padding: 0.75rem;
+
+    }
+
+
+    .exercise-hero-highlight .icon-circle {
+
+        width: 40px;
+
+        height: 40px;
+
+    }
+
+
+    .exercise-specification-card {
+
+        gap: 0.85rem;
+
+    }
+
+}
+/* ==========================================================
+   SECTION 03 : MUSCLES WORKED
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.exercise-muscles {
+
+    padding: 7rem 0;
+
+}
+
+
+/* ==========================================================
+   MAIN GRID
+========================================================== */
+
+.exercise-muscles-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(340px, 420px)
+        minmax(0, 1fr);
+
+    align-items: start;
+
+    gap: 4rem;
+
+}
+
+
+/* ==========================================================
+   ANATOMY AREA
+========================================================== */
+
+.exercise-anatomy {
+
+    position: sticky;
+
+    top: 110px;
+
+    min-width: 0;
+
+}
+
+
+/* ==========================================================
+   ANATOMY CARD
+========================================================== */
+
+.exercise-anatomy-card {
+
+    overflow: hidden;
+
+    margin: 0;
+
+    padding: 1rem;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-large);
+
+    background: var(--card);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.18);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+
+}
+
+
+.exercise-anatomy-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 30px 65px rgba(37, 99, 235, 0.14);
+
+}
+
+
+.exercise-anatomy-card img {
+
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: contain;
+
+    border-radius:
+        calc(var(--radius-large) - 0.35rem);
+
+}
+
+
+/* ==========================================================
+   MUSCLE GROUPS
+========================================================== */
+
+.exercise-muscle-groups {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2.5rem;
+
+    min-width: 0;
+
+}
+
+
+/* ==========================================================
+   SINGLE MUSCLE GROUP
+========================================================== */
+
+.exercise-muscle-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+}
+
+
+/* ==========================================================
+   GROUP HEADER
+========================================================== */
+
+.exercise-muscle-group-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.exercise-muscle-group-header h3 {
+
+    margin: 0;
+
+}
+
+
+/* ==========================================================
+   MUSCLE CARD
+========================================================== */
+
+.exercise-muscle-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1.25rem;
+
+    padding: 1.25rem;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-medium);
+
+    background: var(--card);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.exercise-muscle-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 18px 40px rgba(37, 99, 235, 0.12);
+
+}
+
+
+/* ==========================================================
+   MUSCLE ICON
+========================================================== */
+
+.exercise-muscle-icon {
+
+    flex-shrink: 0;
+
+}
+
+
+.exercise-muscle-icon .icon-circle {
+
+    width: 58px;
+
+    height: 58px;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+.exercise-muscle-card:hover .icon-circle {
+
+    transform: scale(1.08);
+
+}
+
+
+/* ==========================================================
+   MUSCLE CONTENT
+========================================================== */
+
+.exercise-muscle-content {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.45rem;
+
+    min-width: 0;
+
+}
+
+
+.exercise-muscle-content h4 {
+
+    margin: 0;
+
+    color: var(--white);
+
+    font-size: 1.15rem;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+}
+
+
+.exercise-muscle-content p {
+
+    margin: 0;
+
+    color: var(--gray);
+
+    font-size: 0.95rem;
+
+}
+
+
+/* ==========================================================
+   ACTIVATION METER
+========================================================== */
+
+.exercise-activation-meter {
+
+    width: 100%;
+
+    height: 8px;
+
+    margin-top: 0.35rem;
+
+    overflow: hidden;
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+}
+
+
+/* ==========================================================
+   ACTIVATION FILL
+========================================================== */
+
+.exercise-meter-fill {
+
+    display: block;
+
+    height: 100%;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary),
+            var(--accent)
+        );
+
+    transition: width 0.4s ease;
+
+}
+
+
+.exercise-meter-fill.level-5 {
+
+    width: 100%;
+
+}
+
+
+.exercise-meter-fill.level-4 {
+
+    width: 80%;
+
+}
+
+
+.exercise-meter-fill.level-3 {
+
+    width: 60%;
+
+}
+
+
+.exercise-meter-fill.level-2 {
+
+    width: 40%;
+
+}
+
+
+.exercise-meter-fill.level-1 {
+
+    width: 20%;
+
+}
+
+
+/* ==========================================================
+   ACTIVATION LABEL
+========================================================== */
+
+.exercise-activation-label {
+
+    margin-top: 0.2rem;
+
+    color: var(--gray);
+
+    font-size: 0.82rem;
+
+    font-weight: 600;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : LARGE TABLETS
+========================================================== */
+
+@media (max-width: 1024px) {
+
+    .exercise-muscles {
+
+        padding: 5rem 0;
+
+    }
+
+
+    .exercise-muscles-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+
+    }
+
+
+    .exercise-anatomy {
+
+        position: static;
+
+        width: 100%;
+
+        max-width: 650px;
+
+        margin: 0 auto;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : TABLETS
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .exercise-muscles {
+
+        padding: 4rem 0;
+
+    }
+
+
+    .exercise-muscles-grid {
+
+        gap: 2.5rem;
+
+    }
+
+
+    .exercise-muscle-groups {
+
+        gap: 2rem;
+
+    }
+
+
+    .exercise-muscle-card {
+
+        gap: 1rem;
+
+        padding: 1rem;
+
+    }
+
+
+    .exercise-muscle-icon .icon-circle {
+
+        width: 52px;
+
+        height: 52px;
+
+    }
+
+
+    .exercise-muscle-content h4 {
+
+        font-size: 1.05rem;
+
+    }
+
+
+    .exercise-muscle-content p {
+
+        font-size: 0.92rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : MOBILE
+========================================================== */
+
+@media (max-width: 576px) {
+
+    .exercise-muscles {
+
+        padding: 3.5rem 0;
+
+    }
+
+
+    .exercise-muscles-grid {
+
+        gap: 2rem;
+
+    }
+
+
+    .exercise-anatomy-card {
+
+        padding: 0.75rem;
+
+    }
+
+
+    .exercise-muscle-group {
+
+        gap: 0.85rem;
+
+    }
+
+
+    .exercise-muscle-card {
+
+        align-items: flex-start;
+
+    }
+
+
+    .exercise-muscle-icon .icon-circle {
+
+        width: 48px;
+
+        height: 48px;
+
+    }
+
+
+    .exercise-activation-meter {
+
+        height: 7px;
+
+    }
+
+
+    .exercise-activation-label {
+
+        font-size: 0.8rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : SMALL PHONES
+========================================================== */
+
+@media (max-width: 380px) {
+
+    .exercise-muscles {
+
+        padding: 3rem 0;
+
+    }
+
+
+    .exercise-muscle-card {
+
+        gap: 0.85rem;
+
+        padding: 0.9rem;
+
+    }
+
+
+    .exercise-muscle-icon .icon-circle {
+
+        width: 44px;
+
+        height: 44px;
+
+    }
+
+
+    .exercise-muscle-content h4 {
+
+        font-size: 1rem;
+
+    }
+
+
+    .exercise-muscle-content p {
+
+        font-size: 0.9rem;
+
+    }
+
+
+    .exercise-activation-label {
+
+        font-size: 0.78rem;
+
+    }
+
+}
+/* ==========================================================
+   SECTION 04 : KEY BENEFITS
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.exercise-benefits {
+
+    padding: 7rem 0;
+
+}
+
+
+/* ==========================================================
+   BENEFITS GRID
+========================================================== */
+
+.exercise-benefits-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 1.5rem;
+
+}
+
+
+/* ==========================================================
+   BENEFIT CARD
+========================================================== */
+
+.exercise-benefit-card {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 1.25rem;
+
+    padding: 1.5rem;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-large);
+
+    background: var(--card);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.exercise-benefit-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 20px 45px rgba(37, 99, 235, 0.12);
+
+}
+
+
+/* ==========================================================
+   BENEFIT ICON
+========================================================== */
+
+.exercise-benefit-card > .icon-circle {
+
+    flex-shrink: 0;
+
+    width: 60px;
+
+    height: 60px;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+.exercise-benefit-card:hover > .icon-circle {
+
+    transform: scale(1.08);
+
+}
+
+
+/* ==========================================================
+   BENEFIT CONTENT
+========================================================== */
+
+.exercise-benefit-content {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.65rem;
+
+    min-width: 0;
+
+}
+
+
+.exercise-benefit-content h3 {
+
+    margin: 0;
+
+    color: var(--white);
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+}
+
+
+.exercise-benefit-content p {
+
+    margin: 0;
+
+    color: var(--gray);
+
+    line-height: 1.75;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : LARGE TABLETS
+========================================================== */
+
+@media (max-width: 1024px) {
+
+    .exercise-benefits {
+
+        padding: 5rem 0;
+
+    }
+
+
+    .exercise-benefits-grid {
+
+        gap: 1.25rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : TABLETS
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .exercise-benefits {
+
+        padding: 4rem 0;
+
+    }
+
+
+    .exercise-benefits-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 1.25rem;
+
+    }
+
+
+    .exercise-benefit-card {
+
+        gap: 1rem;
+
+        padding: 1.25rem;
+
+    }
+
+
+    .exercise-benefit-card > .icon-circle {
+
+        width: 56px;
+
+        height: 56px;
+
+    }
+
+
+    .exercise-benefit-content h3 {
+
+        font-size: 1.1rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : MOBILE
+========================================================== */
+
+@media (max-width: 576px) {
+
+    .exercise-benefits {
+
+        padding: 3.5rem 0;
+
+    }
+
+
+    .exercise-benefits-grid {
+
+        gap: 1rem;
+
+    }
+
+
+    .exercise-benefit-card {
+
+        gap: 0.9rem;
+
+        padding: 1rem;
+
+    }
+
+
+    .exercise-benefit-card > .icon-circle {
+
+        width: 52px;
+
+        height: 52px;
+
+    }
+
+
+    .exercise-benefit-content {
+
+        gap: 0.5rem;
+
+    }
+
+
+    .exercise-benefit-content h3 {
+
+        font-size: 1.05rem;
+
+    }
+
+
+    .exercise-benefit-content p {
+
+        font-size: 0.95rem;
+
+        line-height: 1.7;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : SMALL PHONES
+========================================================== */
+
+@media (max-width: 380px) {
+
+    .exercise-benefits {
+
+        padding: 3rem 0;
+
+    }
+
+
+    .exercise-benefit-card {
+
+        padding: 0.9rem;
+
+    }
+
+
+    .exercise-benefit-card > .icon-circle {
+
+        width: 48px;
+
+        height: 48px;
+
+    }
+
+
+    .exercise-benefit-content h3 {
+
+        font-size: 1rem;
+
+    }
+
+
+    .exercise-benefit-content p {
+
+        font-size: 0.9rem;
+
+    }
+
+}
+/* ==========================================================
+   SECTION 05 : HOW TO PERFORM
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.exercise-technique {
+
+    padding: 7rem 0;
+
+}
+
+
+/* ==========================================================
+   TECHNIQUE TIMELINE
+========================================================== */
+
+.exercise-technique-timeline {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+}
+
+
+/* ==========================================================
+   TIMELINE STEP
+========================================================== */
+
+.exercise-technique-step {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 100px minmax(0, 1fr);
+
+    align-items: flex-start;
+
+    gap: 2rem;
+
+    padding-bottom: 2.5rem;
+
+}
+
+
+.exercise-technique-step:last-child {
+
+    padding-bottom: 0;
+
+}
+
+
+/* ==========================================================
+   VERTICAL CONNECTOR LINE
+========================================================== */
+
+.exercise-technique-step::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    bottom: 0;
+
+    left: 49px;
+
+    width: 2px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(37, 99, 235, 0.45),
+            rgba(255, 255, 255, 0.08)
+        );
+
+}
+
+
+.exercise-technique-step:last-child::before {
+
+    display: none;
+
+}
+
+
+/* ==========================================================
+   STEP MARKER
+========================================================== */
+
+.exercise-step-marker {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100px;
+
+    height: 100px;
+
+    border: 2px solid var(--border);
+
+    border-radius: 50%;
+
+    background: var(--card);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.exercise-technique-step:hover .exercise-step-marker {
+
+    transform: scale(1.05);
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 18px 40px rgba(37, 99, 235, 0.16);
+
+}
+
+
+/* ==========================================================
+   STEP LABEL
+========================================================== */
+
+.exercise-step-label {
+
+    color: var(--gray);
+
+    font-size: 0.7rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+
+    line-height: 1;
+
+    text-transform: uppercase;
+
+}
+
+
+/* ==========================================================
+   STEP NUMBER
+========================================================== */
+
+.exercise-step-number {
+
+    margin-top: 0.4rem;
+
+    color: var(--primary);
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+}
+
+
+/* ==========================================================
+   TECHNIQUE CARD
+========================================================== */
+
+.exercise-technique-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.5rem;
+
+    min-width: 0;
+
+    padding: 2rem;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-large);
+
+    background: var(--card);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.exercise-technique-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 20px 45px rgba(37, 99, 235, 0.12);
+
+}
+
+
+/* ==========================================================
+   TECHNIQUE HEADER
+========================================================== */
+
+.exercise-technique-header {
+
+    margin: 0;
+
+}
+
+
+.exercise-technique-header h3 {
+
+    margin: 0;
+
+    color: var(--white);
+
+    font-size: 1.5rem;
+
+    line-height: 1.35;
+
+}
+
+
+/* ==========================================================
+   TECHNIQUE DESCRIPTION
+========================================================== */
+
+.exercise-technique-description {
+
+    padding-bottom: 1.5rem;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.exercise-technique-description p {
+
+    max-width: 70ch;
+
+    margin: 0;
+
+    color: var(--gray);
+
+    line-height: 1.8;
+
+}
+
+
+/* ==========================================================
+   COACH TIP
+========================================================== */
+
+.exercise-coach-tip {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 1rem;
+
+    padding: 1.25rem;
+
+    border: 1px solid rgba(37, 99, 235, 0.15);
+
+    border-radius: var(--radius-medium);
+
+    background: rgba(37, 99, 235, 0.05);
+
+}
+
+
+.exercise-coach-tip > .icon-circle {
+
+    flex-shrink: 0;
+
+}
+
+
+/* ==========================================================
+   COACH TIP CONTENT
+========================================================== */
+
+.exercise-coach-tip-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.5rem;
+
+    min-width: 0;
+
+}
+
+
+.exercise-coach-tip-title {
+
+    color: var(--primary);
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+}
+
+
+.exercise-coach-tip-content p {
+
+    margin: 0;
+
+    color: var(--gray);
+
+    line-height: 1.75;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : LARGE TABLETS
+========================================================== */
+
+@media (max-width: 1024px) {
+
+    .exercise-technique {
+
+        padding: 5rem 0;
+
+    }
+
+
+    .exercise-technique-timeline {
+
+        max-width: 100%;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : TABLETS
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .exercise-technique {
+
+        padding: 4rem 0;
+
+    }
+
+
+    .exercise-technique-step {
+
+        grid-template-columns: 80px minmax(0, 1fr);
+
+        gap: 1.5rem;
+
+        padding-bottom: 2.5rem;
+
+    }
+
+
+    .exercise-technique-step::before {
+
+        left: 39px;
+
+    }
+
+
+    .exercise-step-marker {
+
+        width: 80px;
+
+        height: 80px;
+
+    }
+
+
+    .exercise-step-label {
+
+        font-size: 0.62rem;
+
+        letter-spacing: 0.12em;
+
+    }
+
+
+    .exercise-step-number {
+
+        font-size: 1.6rem;
+
+    }
+
+
+    .exercise-technique-card {
+
+        gap: 1.25rem;
+
+        padding: 1.5rem;
+
+    }
+
+
+    .exercise-technique-header h3 {
+
+        font-size: 1.25rem;
+
+    }
+
+
+    .exercise-coach-tip {
+
+        padding: 1rem;
+
+    }
+
+
+    .exercise-coach-tip > .icon-circle {
+
+        width: 52px;
+
+        height: 52px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : MOBILE
+========================================================== */
+
+@media (max-width: 576px) {
+
+    .exercise-technique {
+
+        padding: 3.5rem 0;
+
+    }
+
+
+    .exercise-technique-step {
+
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+
+        padding-bottom: 2rem;
+
+    }
+
+
+    .exercise-technique-step::before {
+
+        display: none;
+
+    }
+
+
+    .exercise-step-marker {
+
+        width: 72px;
+
+        height: 72px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .exercise-step-label {
+
+        font-size: 0.6rem;
+
+    }
+
+
+    .exercise-step-number {
+
+        margin-top: 0.3rem;
+
+        font-size: 1.4rem;
+
+    }
+
+
+    .exercise-technique-card {
+
+        padding: 1.25rem;
+
+    }
+
+
+    .exercise-technique-header h3 {
+
+        font-size: 1.15rem;
+
+    }
+
+
+    .exercise-technique-description {
+
+        padding-bottom: 1.25rem;
+
+    }
+
+
+    .exercise-technique-description p {
+
+        font-size: 0.95rem;
+
+        line-height: 1.75;
+
+    }
+
+
+    .exercise-coach-tip {
+
+        gap: 0.85rem;
+
+        padding: 1rem;
+
+    }
+
+
+    .exercise-coach-tip > .icon-circle {
+
+        width: 48px;
+
+        height: 48px;
+
+    }
+
+
+    .exercise-coach-tip-title {
+
+        font-size: 0.75rem;
+
+    }
+
+
+    .exercise-coach-tip-content p {
+
+        font-size: 0.92rem;
+
+        line-height: 1.7;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : SMALL PHONES
+========================================================== */
+
+@media (max-width: 380px) {
+
+    .exercise-technique {
+
+        padding: 3rem 0;
+
+    }
+
+
+    .exercise-technique-card {
+
+        padding: 1rem;
+
+    }
+
+
+    .exercise-step-marker {
+
+        width: 68px;
+
+        height: 68px;
+
+    }
+
+
+    .exercise-technique-header h3 {
+
+        font-size: 1.05rem;
+
+    }
+
+
+    .exercise-technique-description p {
+
+        font-size: 0.9rem;
+
+    }
+
+
+    .exercise-coach-tip {
+
+        padding: 0.9rem;
+
+    }
+
+
+    .exercise-coach-tip > .icon-circle {
+
+        width: 44px;
+
+        height: 44px;
+
+    }
+
+
+    .exercise-coach-tip-content p {
+
+        font-size: 0.88rem;
+
+    }
+
+}
+/* ==========================================================
+   SECTION 06 : COMMON MISTAKES
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.exercise-mistakes {
+
+    padding: 7rem 0;
+
+}
+
+
+/* ==========================================================
+   MISTAKES GRID
+========================================================== */
+
+.exercise-mistakes-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 1.5rem;
+
+}
+
+
+/* ==========================================================
+   MISTAKE CARD
+========================================================== */
+
+.exercise-mistake-card {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 1.25rem;
+
+    min-width: 0;
+
+    padding: 1.5rem;
+
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-large);
+
+    background: var(--card);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.exercise-mistake-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 20px 45px rgba(37, 99, 235, 0.12);
+
+}
+
+
+/* ==========================================================
+   MISTAKE NUMBER
+========================================================== */
+
+.exercise-mistake-number {
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 58px;
+
+    height: 58px;
+
+    border: 1px solid rgba(239, 68, 68, 0.2);
+
+    border-radius: 50%;
+
+    background: rgba(239, 68, 68, 0.08);
+
+    color: #f87171;
+
+    font-size: 1.15rem;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+
+}
+
+
+.exercise-mistake-card:hover .exercise-mistake-number {
+
+    transform: scale(1.08);
+
+    border-color: rgba(239, 68, 68, 0.4);
+
+    background: rgba(239, 68, 68, 0.12);
+
+}
+
+
+/* ==========================================================
+   MISTAKE CONTENT
+========================================================== */
+
+.exercise-mistake-content {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.85rem;
+
+    min-width: 0;
+
+}
+
+
+.exercise-mistake-content > h3 {
+
+    margin: 0;
+
+    color: var(--white);
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+    line-height: 1.35;
+
+}
+
+
+.exercise-mistake-content > p {
+
+    margin: 0;
+
+    color: var(--gray);
+
+    line-height: 1.75;
+
+}
+
+
+/* ==========================================================
+   HOW TO FIX IT
+========================================================== */
+
+.exercise-mistake-fix {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 0.9rem;
+
+    margin-top: 0.35rem;
+
+    padding: 1rem;
+
+    border: 1px solid rgba(34, 197, 94, 0.15);
+
+    border-radius: var(--radius-medium);
+
+    background: rgba(34, 197, 94, 0.05);
+
+}
+
+
+/* ==========================================================
+   FIX ICON
+========================================================== */
+
+.exercise-mistake-fix > .icon-circle {
+
+    flex-shrink: 0;
+
+    width: 46px;
+
+    height: 46px;
+
+}
+
+
+/* ==========================================================
+   FIX CONTENT
+========================================================== */
+
+.exercise-mistake-fix-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.4rem;
+
+    min-width: 0;
+
+}
+
+
+.exercise-mistake-fix-title {
+
+    color: #4ade80;
+
+    font-size: 0.78rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+}
+
+
+.exercise-mistake-fix-content p {
+
+    margin: 0;
+
+    color: var(--gray);
+
+    font-size: 0.94rem;
+
+    line-height: 1.7;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : LARGE TABLETS
+========================================================== */
+
+@media (max-width: 1024px) {
+
+    .exercise-mistakes {
+
+        padding: 5rem 0;
+
+    }
+
+
+    .exercise-mistakes-grid {
+
+        gap: 1.25rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : TABLETS
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .exercise-mistakes {
+
+        padding: 4rem 0;
+
+    }
+
+
+    .exercise-mistakes-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 1.25rem;
+
+    }
+
+
+    .exercise-mistake-card {
+
+        gap: 1rem;
+
+        padding: 1.25rem;
+
+    }
+
+
+    .exercise-mistake-number {
+
+        width: 54px;
+
+        height: 54px;
+
+        font-size: 1.05rem;
+
+    }
+
+
+    .exercise-mistake-content > h3 {
+
+        font-size: 1.1rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : MOBILE
+========================================================== */
+
+@media (max-width: 576px) {
+
+    .exercise-mistakes {
+
+        padding: 3.5rem 0;
+
+    }
+
+
+    .exercise-mistakes-grid {
+
+        gap: 1rem;
+
+    }
+
+
+    .exercise-mistake-card {
+
+        flex-direction: column;
+
+        gap: 1rem;
+
+        padding: 1rem;
+
+    }
+
+
+    .exercise-mistake-number {
+
+        width: 50px;
+
+        height: 50px;
+
+        font-size: 1rem;
+
+    }
+
+
+    .exercise-mistake-content {
+
+        gap: 0.75rem;
+
+    }
+
+
+    .exercise-mistake-content > h3 {
+
+        font-size: 1.05rem;
+
+    }
+
+
+    .exercise-mistake-content > p {
+
+        font-size: 0.95rem;
+
+        line-height: 1.7;
+
+    }
+
+
+    .exercise-mistake-fix {
+
+        gap: 0.8rem;
+
+        padding: 0.9rem;
+
+    }
+
+
+    .exercise-mistake-fix > .icon-circle {
+
+        width: 44px;
+
+        height: 44px;
+
+    }
+
+
+    .exercise-mistake-fix-content p {
+
+        font-size: 0.9rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : SMALL PHONES
+========================================================== */
+
+@media (max-width: 380px) {
+
+    .exercise-mistakes {
+
+        padding: 3rem 0;
+
+    }
+
+
+    .exercise-mistake-card {
+
+        padding: 0.9rem;
+
+    }
+
+
+    .exercise-mistake-number {
+
+        width: 46px;
+
+        height: 46px;
+
+        font-size: 0.95rem;
+
+    }
+
+
+    .exercise-mistake-content > h3 {
+
+        font-size: 1rem;
+
+    }
+
+
+    .exercise-mistake-content > p {
+
+        font-size: 0.9rem;
+
+    }
+
+
+    .exercise-mistake-fix {
+
+        padding: 0.85rem;
+
+    }
+
+
+    .exercise-mistake-fix > .icon-circle {
+
+        width: 42px;
+
+        height: 42px;
+
+    }
+
+
+    .exercise-mistake-fix-title {
+
+        font-size: 0.74rem;
+
+    }
+
+
+    .exercise-mistake-fix-content p {
+
+        font-size: 0.88rem;
+
+    }
+
+}
+/* ==========================================================
+   SECTION 07 : COACH'S TIPS
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.exercise-coach-tips {
+
+    padding: 7rem 0;
+
+}
+
+
+/* ==========================================================
+   COACH TIPS GRID
+========================================================== */
+
+.exercise-coach-tips-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 1.5rem;
+
+}
+
+
+/* ==========================================================
+   COACH TIP CARD
+========================================================== */
+
+.exercise-coach-tip-card {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 1.25rem;
+
+    min-width: 0;
+
+    padding: 1.5rem;
+
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-large);
+
+    background: var(--card);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.exercise-coach-tip-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 20px 45px rgba(37, 99, 235, 0.12);
+
+}
+
+
+/* ==========================================================
+   TIP NUMBER
+========================================================== */
+
+.exercise-coach-tip-number {
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 58px;
+
+    height: 58px;
+
+    border: 1px solid rgba(37, 99, 235, 0.25);
+
+    border-radius: 50%;
+
+    background: rgba(37, 99, 235, 0.08);
+
+    color: var(--primary);
+
+    font-size: 1.15rem;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.exercise-coach-tip-card:hover .exercise-coach-tip-number {
+
+    transform: scale(1.08);
+
+    border-color: var(--primary);
+
+    background: rgba(37, 99, 235, 0.14);
+
+    box-shadow:
+        0 10px 30px rgba(37, 99, 235, 0.15);
+
+}
+
+
+/* ==========================================================
+   TIP CARD CONTENT
+========================================================== */
+
+.exercise-coach-tip-card-content {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.85rem;
+
+    min-width: 0;
+
+}
+
+
+.exercise-coach-tip-card-content > h3 {
+
+    margin: 0;
+
+    color: var(--white);
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+    line-height: 1.35;
+
+}
+
+
+.exercise-coach-tip-card-content > p {
+
+    margin: 0;
+
+    color: var(--gray);
+
+    line-height: 1.75;
+
+}
+
+
+/* ==========================================================
+   COACH CUE
+========================================================== */
+
+.exercise-coach-cue {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.45rem;
+
+    margin-top: 0.35rem;
+
+    padding: 1rem;
+
+    border: 1px solid rgba(37, 99, 235, 0.15);
+
+    border-radius: var(--radius-medium);
+
+    background: rgba(37, 99, 235, 0.05);
+
+}
+
+
+/* ==========================================================
+   COACH CUE LABEL
+========================================================== */
+
+.exercise-coach-cue-label {
+
+    color: var(--primary);
+
+    font-size: 0.78rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* ==========================================================
+   COACH CUE TEXT
+========================================================== */
+
+.exercise-coach-cue p {
+
+    margin: 0;
+
+    color: var(--gray);
+
+    font-size: 0.94rem;
+
+    line-height: 1.7;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : LARGE TABLETS
+========================================================== */
+
+@media (max-width: 1024px) {
+
+    .exercise-coach-tips {
+
+        padding: 5rem 0;
+
+    }
+
+
+    .exercise-coach-tips-grid {
+
+        gap: 1.25rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : TABLETS
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .exercise-coach-tips {
+
+        padding: 4rem 0;
+
+    }
+
+
+    .exercise-coach-tips-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 1.25rem;
+
+    }
+
+
+    .exercise-coach-tip-card {
+
+        gap: 1rem;
+
+        padding: 1.25rem;
+
+    }
+
+
+    .exercise-coach-tip-number {
+
+        width: 54px;
+
+        height: 54px;
+
+        font-size: 1.05rem;
+
+    }
+
+
+    .exercise-coach-tip-card-content > h3 {
+
+        font-size: 1.1rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : MOBILE
+========================================================== */
+
+@media (max-width: 576px) {
+
+    .exercise-coach-tips {
+
+        padding: 3.5rem 0;
+
+    }
+
+
+    .exercise-coach-tips-grid {
+
+        gap: 1rem;
+
+    }
+
+
+    .exercise-coach-tip-card {
+
+        flex-direction: column;
+
+        gap: 1rem;
+
+        padding: 1rem;
+
+    }
+
+
+    .exercise-coach-tip-number {
+
+        width: 50px;
+
+        height: 50px;
+
+        font-size: 1rem;
+
+    }
+
+
+    .exercise-coach-tip-card-content {
+
+        gap: 0.75rem;
+
+    }
+
+
+    .exercise-coach-tip-card-content > h3 {
+
+        font-size: 1.05rem;
+
+    }
+
+
+    .exercise-coach-tip-card-content > p {
+
+        font-size: 0.95rem;
+
+        line-height: 1.7;
+
+    }
+
+
+    .exercise-coach-cue {
+
+        padding: 0.9rem;
+
+    }
+
+
+    .exercise-coach-cue p {
+
+        font-size: 0.9rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : SMALL PHONES
+========================================================== */
+
+@media (max-width: 380px) {
+
+    .exercise-coach-tips {
+
+        padding: 3rem 0;
+
+    }
+
+
+    .exercise-coach-tip-card {
+
+        padding: 0.9rem;
+
+    }
+
+
+    .exercise-coach-tip-number {
+
+        width: 46px;
+
+        height: 46px;
+
+        font-size: 0.95rem;
+
+    }
+
+
+    .exercise-coach-tip-card-content > h3 {
+
+        font-size: 1rem;
+
+    }
+
+
+    .exercise-coach-tip-card-content > p {
+
+        font-size: 0.9rem;
+
+    }
+
+
+    .exercise-coach-cue {
+
+        padding: 0.85rem;
+
+    }
+
+
+    .exercise-coach-cue-label {
+
+        font-size: 0.74rem;
+
+    }
+
+
+    .exercise-coach-cue p {
+
+        font-size: 0.88rem;
+
+    }
+
+}
+/* ==========================================================
+   SECTION 08 : EXERCISE PROGRESSION
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.exercise-progression {
+
+    padding: 7rem 0;
+
+}
+
+
+/* ==========================================================
+   PROGRESSION ROADMAP
+========================================================== */
+
+.exercise-progression-roadmap {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0;
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+}
+
+
+/* ==========================================================
+   PROGRESSION STAGE
+========================================================== */
+
+.exercise-progression-stage {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 100px minmax(0, 1fr);
+
+    align-items: flex-start;
+
+    gap: 2rem;
+
+    padding-bottom: 2.5rem;
+
+}
+
+
+.exercise-progression-stage:last-child {
+
+    padding-bottom: 0;
+
+}
+
+
+/* ==========================================================
+   VERTICAL CONNECTOR LINE
+========================================================== */
+
+.exercise-progression-stage::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    bottom: 0;
+
+    left: 49px;
+
+    width: 2px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(37, 99, 235, 0.5),
+            rgba(255, 255, 255, 0.08)
+        );
+
+}
+
+
+.exercise-progression-stage:last-child::before {
+
+    display: none;
+
+}
+
+
+/* ==========================================================
+   PROGRESSION MARKER
+========================================================== */
+
+.exercise-progression-marker {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100px;
+
+    height: 100px;
+
+    border: 2px solid var(--border);
+
+    border-radius: 50%;
+
+    background: var(--card);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.exercise-progression-stage:hover
+.exercise-progression-marker {
+
+    transform: scale(1.05);
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 18px 40px rgba(37, 99, 235, 0.16);
+
+}
+
+
+/* ==========================================================
+   MARKER LABEL
+========================================================== */
+
+.exercise-progression-label {
+
+    color: var(--gray);
+
+    font-size: 0.68rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.14em;
+
+    line-height: 1;
+
+    text-transform: uppercase;
+
+}
+
+
+/* ==========================================================
+   MARKER NUMBER
+========================================================== */
+
+.exercise-progression-number {
+
+    margin-top: 0.4rem;
+
+    color: var(--primary);
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+}
+
+
+/* ==========================================================
+   PROGRESSION CARD
+========================================================== */
+
+.exercise-progression-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.4rem;
+
+    min-width: 0;
+
+    padding: 2rem;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-large);
+
+    background: var(--card);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.exercise-progression-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 20px 45px rgba(37, 99, 235, 0.12);
+
+}
+
+
+/* ==========================================================
+   CARD HEADER
+========================================================== */
+
+.exercise-progression-card-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+}
+
+
+/* ==========================================================
+   PROGRESSION ICON
+========================================================== */
+
+.exercise-progression-icon {
+
+    flex-shrink: 0;
+
+}
+
+
+.exercise-progression-icon .icon-circle {
+
+    width: 58px;
+
+    height: 58px;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+.exercise-progression-card:hover
+.exercise-progression-icon .icon-circle {
+
+    transform: scale(1.08);
+
+}
+
+
+/* ==========================================================
+   PROGRESSION HEADING
+========================================================== */
+
+.exercise-progression-heading {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.35rem;
+
+    min-width: 0;
+
+}
+
+
+.exercise-progression-level {
+
+    color: var(--primary);
+
+    font-size: 0.78rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+
+}
+
+
+.exercise-progression-heading h3 {
+
+    margin: 0;
+
+    color: var(--white);
+
+    font-size: 1.35rem;
+
+    font-weight: 700;
+
+    line-height: 1.35;
+
+}
+
+
+/* ==========================================================
+   PROGRESSION DESCRIPTION
+========================================================== */
+
+.exercise-progression-description {
+
+    max-width: 75ch;
+
+    margin: 0;
+
+    color: var(--gray);
+
+    line-height: 1.8;
+
+}
+
+
+/* ==========================================================
+   MAIN FOCUS BOX
+========================================================== */
+
+.exercise-progression-focus {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.45rem;
+
+    padding: 1rem;
+
+    border: 1px solid rgba(37, 99, 235, 0.15);
+
+    border-radius: var(--radius-medium);
+
+    background: rgba(37, 99, 235, 0.05);
+
+}
+
+
+/* ==========================================================
+   MAIN FOCUS LABEL
+========================================================== */
+
+.exercise-progression-focus-label {
+
+    color: var(--primary);
+
+    font-size: 0.78rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* ==========================================================
+   MAIN FOCUS TEXT
+========================================================== */
+
+.exercise-progression-focus p {
+
+    margin: 0;
+
+    color: var(--gray);
+
+    font-size: 0.94rem;
+
+    line-height: 1.7;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : LARGE TABLETS
+========================================================== */
+
+@media (max-width: 1024px) {
+
+    .exercise-progression {
+
+        padding: 5rem 0;
+
+    }
+
+
+    .exercise-progression-roadmap {
+
+        max-width: 100%;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : TABLETS
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .exercise-progression {
+
+        padding: 4rem 0;
+
+    }
+
+
+    .exercise-progression-stage {
+
+        grid-template-columns: 80px minmax(0, 1fr);
+
+        gap: 1.5rem;
+
+        padding-bottom: 2.5rem;
+
+    }
+
+
+    .exercise-progression-stage::before {
+
+        left: 39px;
+
+    }
+
+
+    .exercise-progression-marker {
+
+        width: 80px;
+
+        height: 80px;
+
+    }
+
+
+    .exercise-progression-label {
+
+        font-size: 0.6rem;
+
+        letter-spacing: 0.12em;
+
+    }
+
+
+    .exercise-progression-number {
+
+        font-size: 1.6rem;
+
+    }
+
+
+    .exercise-progression-card {
+
+        gap: 1.25rem;
+
+        padding: 1.5rem;
+
+    }
+
+
+    .exercise-progression-heading h3 {
+
+        font-size: 1.2rem;
+
+    }
+
+
+    .exercise-progression-icon .icon-circle {
+
+        width: 54px;
+
+        height: 54px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : MOBILE
+========================================================== */
+
+@media (max-width: 576px) {
+
+    .exercise-progression {
+
+        padding: 3.5rem 0;
+
+    }
+
+
+    .exercise-progression-stage {
+
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+
+        padding-bottom: 2rem;
+
+    }
+
+
+    .exercise-progression-stage::before {
+
+        display: none;
+
+    }
+
+
+    .exercise-progression-marker {
+
+        width: 72px;
+
+        height: 72px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .exercise-progression-label {
+
+        font-size: 0.58rem;
+
+    }
+
+
+    .exercise-progression-number {
+
+        margin-top: 0.3rem;
+
+        font-size: 1.4rem;
+
+    }
+
+
+    .exercise-progression-card {
+
+        padding: 1.25rem;
+
+    }
+
+
+    .exercise-progression-card-header {
+
+        align-items: flex-start;
+
+        gap: 0.85rem;
+
+    }
+
+
+    .exercise-progression-icon .icon-circle {
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+
+    .exercise-progression-heading h3 {
+
+        font-size: 1.1rem;
+
+    }
+
+
+    .exercise-progression-description {
+
+        font-size: 0.95rem;
+
+        line-height: 1.75;
+
+    }
+
+
+    .exercise-progression-focus {
+
+        padding: 0.9rem;
+
+    }
+
+
+    .exercise-progression-focus p {
+
+        font-size: 0.9rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : SMALL PHONES
+========================================================== */
+
+@media (max-width: 380px) {
+
+    .exercise-progression {
+
+        padding: 3rem 0;
+
+    }
+
+
+    .exercise-progression-card {
+
+        padding: 1rem;
+
+    }
+
+
+    .exercise-progression-marker {
+
+        width: 68px;
+
+        height: 68px;
+
+    }
+
+
+    .exercise-progression-icon .icon-circle {
+
+        width: 46px;
+
+        height: 46px;
+
+    }
+
+
+    .exercise-progression-heading h3 {
+
+        font-size: 1.05rem;
+
+    }
+
+
+    .exercise-progression-description {
+
+        font-size: 0.9rem;
+
+    }
+
+
+    .exercise-progression-focus {
+
+        padding: 0.85rem;
+
+    }
+
+
+    .exercise-progression-focus-label {
+
+        font-size: 0.74rem;
+
+    }
+
+
+    .exercise-progression-focus p {
+
+        font-size: 0.88rem;
+
+    }
+
+}
+/* ==========================================================
+   SECTION 09 : EXERCISE FAQ
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.exercise-faq {
+
+    padding: 7rem 0;
+
+}
+
+
+/* ==========================================================
+   FAQ LIST
+========================================================== */
+
+.exercise-faq-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+}
+
+
+/* ==========================================================
+   FAQ ITEM
+========================================================== */
+
+.exercise-faq-item {
+
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-large);
+
+    background: var(--card);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.exercise-faq-item:hover {
+
+    transform: translateY(-3px);
+
+    border-color: rgba(37, 99, 235, 0.55);
+
+    box-shadow:
+        0 16px 38px rgba(37, 99, 235, 0.1);
+
+}
+
+
+.exercise-faq-item[open] {
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 18px 42px rgba(37, 99, 235, 0.12);
+
+}
+
+
+/* ==========================================================
+   FAQ QUESTION
+========================================================== */
+
+.exercise-faq-question {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 1.5rem;
+
+    padding: 1.5rem;
+
+    cursor: pointer;
+
+    list-style: none;
+
+    user-select: none;
+
+}
+
+
+/* Remove default marker */
+
+.exercise-faq-question::-webkit-details-marker {
+
+    display: none;
+
+}
+
+
+.exercise-faq-question::marker {
+
+    display: none;
+
+    content: "";
+
+}
+
+
+/* ==========================================================
+   QUESTION TEXT
+========================================================== */
+
+.exercise-faq-question-text {
+
+    color: var(--white);
+
+    font-size: 1.08rem;
+
+    font-weight: 700;
+
+    line-height: 1.5;
+
+    transition: color 0.3s ease;
+
+}
+
+
+.exercise-faq-item[open]
+.exercise-faq-question-text {
+
+    color: var(--primary);
+
+}
+
+
+/* ==========================================================
+   FAQ TOGGLE ICON
+========================================================== */
+
+.exercise-faq-toggle {
+
+    position: relative;
+
+    flex-shrink: 0;
+
+    width: 44px;
+
+    height: 44px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 50%;
+
+    background: rgba(37, 99, 235, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+
+}
+
+
+/* Horizontal line */
+
+.exercise-faq-toggle::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    width: 16px;
+
+    height: 2px;
+
+    border-radius: 999px;
+
+    background: var(--primary);
+
+    transform: translate(-50%, -50%);
+
+}
+
+
+/* Vertical line */
+
+.exercise-faq-toggle::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    width: 2px;
+
+    height: 16px;
+
+    border-radius: 999px;
+
+    background: var(--primary);
+
+    transform: translate(-50%, -50%);
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+
+}
+
+
+/* Open state */
+
+.exercise-faq-item[open]
+.exercise-faq-toggle {
+
+    transform: rotate(180deg);
+
+    border-color: var(--primary);
+
+    background: rgba(37, 99, 235, 0.12);
+
+}
+
+
+.exercise-faq-item[open]
+.exercise-faq-toggle::after {
+
+    opacity: 0;
+
+    transform:
+        translate(-50%, -50%)
+        scaleY(0);
+
+}
+
+
+/* ==========================================================
+   FAQ ANSWER
+========================================================== */
+
+.exercise-faq-answer {
+
+    padding:
+        0
+        1.5rem
+        1.5rem;
+
+}
+
+
+/* ==========================================================
+   ANSWER DIVIDER
+========================================================== */
+
+.exercise-faq-answer::before {
+
+    content: "";
+
+    display: block;
+
+    width: 100%;
+
+    height: 1px;
+
+    margin-bottom: 1.25rem;
+
+    background: var(--border);
+
+}
+
+
+/* ==========================================================
+   ANSWER TEXT
+========================================================== */
+
+.exercise-faq-answer p {
+
+    max-width: 80ch;
+
+    margin: 0;
+
+    color: var(--gray);
+
+    line-height: 1.8;
+
+}
+
+
+/* ==========================================================
+   KEYBOARD FOCUS
+========================================================== */
+
+.exercise-faq-question:focus-visible {
+
+    outline: 2px solid var(--primary);
+
+    outline-offset: -4px;
+
+    border-radius: var(--radius-large);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : LARGE TABLETS
+========================================================== */
+
+@media (max-width: 1024px) {
+
+    .exercise-faq {
+
+        padding: 5rem 0;
+
+    }
+
+
+    .exercise-faq-list {
+
+        max-width: 100%;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : TABLETS
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .exercise-faq {
+
+        padding: 4rem 0;
+
+    }
+
+
+    .exercise-faq-question {
+
+        gap: 1rem;
+
+        padding: 1.25rem;
+
+    }
+
+
+    .exercise-faq-question-text {
+
+        font-size: 1rem;
+
+    }
+
+
+    .exercise-faq-toggle {
+
+        width: 40px;
+
+        height: 40px;
+
+    }
+
+
+    .exercise-faq-answer {
+
+        padding:
+            0
+            1.25rem
+            1.25rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : MOBILE
+========================================================== */
+
+@media (max-width: 576px) {
+
+    .exercise-faq {
+
+        padding: 3.5rem 0;
+
+    }
+
+
+    .exercise-faq-list {
+
+        gap: 0.85rem;
+
+    }
+
+
+    .exercise-faq-question {
+
+        align-items: flex-start;
+
+        gap: 0.85rem;
+
+        padding: 1rem;
+
+    }
+
+
+    .exercise-faq-question-text {
+
+        font-size: 0.96rem;
+
+        line-height: 1.55;
+
+    }
+
+
+    .exercise-faq-toggle {
+
+        width: 38px;
+
+        height: 38px;
+
+    }
+
+
+    .exercise-faq-toggle::before {
+
+        width: 14px;
+
+    }
+
+
+    .exercise-faq-toggle::after {
+
+        height: 14px;
+
+    }
+
+
+    .exercise-faq-answer {
+
+        padding:
+            0
+            1rem
+            1rem;
+
+    }
+
+
+    .exercise-faq-answer::before {
+
+        margin-bottom: 1rem;
+
+    }
+
+
+    .exercise-faq-answer p {
+
+        font-size: 0.94rem;
+
+        line-height: 1.75;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : SMALL PHONES
+========================================================== */
+
+@media (max-width: 380px) {
+
+    .exercise-faq {
+
+        padding: 3rem 0;
+
+    }
+
+
+    .exercise-faq-question {
+
+        padding: 0.9rem;
+
+    }
+
+
+    .exercise-faq-question-text {
+
+        font-size: 0.92rem;
+
+    }
+
+
+    .exercise-faq-toggle {
+
+        width: 36px;
+
+        height: 36px;
+
+    }
+
+
+    .exercise-faq-answer {
+
+        padding:
+            0
+            0.9rem
+            0.9rem;
+
+    }
+
+
+    .exercise-faq-answer p {
+
+        font-size: 0.9rem;
+
+    }
+
+}
+/* ==========================================================
+   SECTION 10 : RELATED EXERCISES
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.exercise-related {
+
+    padding: 7rem 0;
+
+}
+
+
+/* ==========================================================
+   RELATED EXERCISES GRID
+========================================================== */
+
+.exercise-related-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 1.5rem;
+
+}
+
+
+/* ==========================================================
+   RELATED EXERCISE CARD
+========================================================== */
+
+.exercise-related-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-large);
+
+    background: var(--card);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+
+}
+
+
+.exercise-related-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 24px 55px rgba(37, 99, 235, 0.14);
+
+}
+
+
+/* ==========================================================
+   IMAGE LINK
+========================================================== */
+
+.exercise-related-image-link {
+
+    display: block;
+
+    overflow: hidden;
+
+}
+
+
+/* ==========================================================
+   EXERCISE IMAGE
+========================================================== */
+
+.exercise-related-image {
+
+    position: relative;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.03);
+
+}
+
+
+.exercise-related-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(8, 12, 24, 0.28),
+            transparent 45%
+        );
+
+}
+
+
+.exercise-related-image img {
+
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+
+    transition: transform 0.55s ease;
+
+}
+
+
+.exercise-related-card:hover
+.exercise-related-image img {
+
+    transform: scale(1.06);
+
+}
+
+
+/* ==========================================================
+   CARD CONTENT
+========================================================== */
+
+.exercise-related-content {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 0.85rem;
+
+    padding: 1.25rem;
+
+}
+
+
+/* ==========================================================
+   CATEGORY
+========================================================== */
+
+.exercise-related-category {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 0.45rem 0.75rem;
+
+    border: 1px solid rgba(37, 99, 235, 0.18);
+
+    border-radius: 999px;
+
+    background: rgba(37, 99, 235, 0.07);
+
+    color: var(--primary);
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.04em;
+
+}
+
+
+/* ==========================================================
+   EXERCISE TITLE
+========================================================== */
+
+.exercise-related-content h3 {
+
+    margin: 0;
+
+    font-size: 1.2rem;
+
+    line-height: 1.35;
+
+}
+
+
+.exercise-related-content h3 a {
+
+    color: var(--white);
+
+    transition: color 0.25s ease;
+
+}
+
+
+.exercise-related-content h3 a:hover {
+
+    color: var(--primary);
+
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.exercise-related-content > p {
+
+    margin: 0;
+
+    color: var(--gray);
+
+    font-size: 0.94rem;
+
+    line-height: 1.7;
+
+}
+
+
+/* ==========================================================
+   EXERCISE META
+========================================================== */
+
+.exercise-related-meta {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 0.75rem;
+
+    width: 100%;
+
+    margin-top: auto;
+
+    padding-top: 0.5rem;
+
+}
+
+
+/* ==========================================================
+   META ITEM
+========================================================== */
+
+.exercise-related-meta-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.3rem;
+
+    padding: 0.75rem;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-medium);
+
+    background: rgba(255, 255, 255, 0.02);
+
+}
+
+
+/* ==========================================================
+   META LABEL
+========================================================== */
+
+.exercise-related-meta-label {
+
+    color: var(--gray);
+
+    font-size: 0.68rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* ==========================================================
+   META VALUE
+========================================================== */
+
+.exercise-related-meta-value {
+
+    color: var(--white);
+
+    font-size: 0.88rem;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+}
+
+
+/* ==========================================================
+   VIEW EXERCISE LINK
+========================================================== */
+
+.exercise-related-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 0.55rem;
+
+    margin-top: 0.35rem;
+
+    color: var(--primary);
+
+    font-size: 0.92rem;
+
+    font-weight: 700;
+
+    transition:
+        gap 0.25s ease,
+        color 0.25s ease;
+
+}
+
+
+.exercise-related-link:hover {
+
+    gap: 0.8rem;
+
+}
+
+
+.exercise-related-link span {
+
+    font-size: 1.15rem;
+
+    line-height: 1;
+
+}
+
+
+/* ==========================================================
+   KEYBOARD FOCUS
+========================================================== */
+
+.exercise-related-card a:focus-visible {
+
+    outline: 2px solid var(--primary);
+
+    outline-offset: 3px;
+
+    border-radius: 4px;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : SMALL DESKTOPS
+========================================================== */
+
+@media (max-width: 1200px) {
+
+    .exercise-related-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : LARGE TABLETS
+========================================================== */
+
+@media (max-width: 1024px) {
+
+    .exercise-related {
+
+        padding: 5rem 0;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : TABLETS
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .exercise-related {
+
+        padding: 4rem 0;
+
+    }
+
+
+    .exercise-related-grid {
+
+        gap: 1.25rem;
+
+    }
+
+
+    .exercise-related-content {
+
+        padding: 1.15rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : MOBILE
+========================================================== */
+
+@media (max-width: 576px) {
+
+    .exercise-related {
+
+        padding: 3.5rem 0;
+
+    }
+
+
+    .exercise-related-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+
+    }
+
+
+    .exercise-related-image img {
+
+        aspect-ratio: 16 / 10;
+
+    }
+
+
+    .exercise-related-content {
+
+        padding: 1rem;
+
+    }
+
+
+    .exercise-related-content h3 {
+
+        font-size: 1.1rem;
+
+    }
+
+
+    .exercise-related-content > p {
+
+        font-size: 0.92rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : SMALL PHONES
+========================================================== */
+
+@media (max-width: 380px) {
+
+    .exercise-related {
+
+        padding: 3rem 0;
+
+    }
+
+
+    .exercise-related-content {
+
+        padding: 0.9rem;
+
+    }
+
+
+    .exercise-related-meta {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .exercise-related-content h3 {
+
+        font-size: 1.05rem;
+
+    }
+
+
+    .exercise-related-content > p {
+
+        font-size: 0.9rem;
+
+    }
+
+}
+/* ==========================================================
+   SECTION 11 : FINAL CTA
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.exercise-final-cta {
+
+    padding: 7rem 0;
+
+}
+
+
+/* ==========================================================
+   CTA CARD
+========================================================== */
+
+.exercise-final-cta-card {
+
+    position: relative;
+
+    isolation: isolate;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 480px;
+
+    overflow: hidden;
+
+    padding: 5rem 2rem;
+
+    border: 1px solid rgba(37, 99, 235, 0.28);
+
+    border-radius: var(--radius-large);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37, 99, 235, 0.12),
+            rgba(15, 23, 42, 0.96) 42%,
+            rgba(8, 12, 24, 0.98)
+        );
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.22);
+
+}
+
+
+/* ==========================================================
+   DECORATIVE GLOWS
+========================================================== */
+
+.exercise-final-cta-glow {
+
+    position: absolute;
+
+    z-index: -1;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    filter: blur(10px);
+
+}
+
+
+/* Glow One */
+
+.exercise-final-cta-glow-one {
+
+    top: -180px;
+
+    left: -120px;
+
+    width: 420px;
+
+    height: 420px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37, 99, 235, 0.22) 0%,
+            rgba(37, 99, 235, 0.08) 45%,
+            transparent 72%
+        );
+
+}
+
+
+/* Glow Two */
+
+.exercise-final-cta-glow-two {
+
+    right: -160px;
+
+    bottom: -220px;
+
+    width: 500px;
+
+    height: 500px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(59, 130, 246, 0.16) 0%,
+            rgba(37, 99, 235, 0.05) 48%,
+            transparent 72%
+        );
+
+}
+
+
+/* ==========================================================
+   CTA CONTENT
+========================================================== */
+
+.exercise-final-cta-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 100%;
+
+    max-width: 800px;
+
+    text-align: center;
+
+}
+
+
+/* ==========================================================
+   CTA ICON
+========================================================== */
+
+.exercise-final-cta-icon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 1.25rem;
+
+}
+
+
+.exercise-final-cta-icon .icon-circle {
+
+    width: 68px;
+
+    height: 68px;
+
+    border-color: rgba(37, 99, 235, 0.3);
+
+    background: rgba(37, 99, 235, 0.12);
+
+    box-shadow:
+        0 15px 35px rgba(37, 99, 235, 0.14);
+
+}
+
+
+/* ==========================================================
+   CTA BADGE
+========================================================== */
+
+.exercise-final-cta-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 1rem;
+
+    padding: 0.55rem 0.9rem;
+
+    border: 1px solid rgba(37, 99, 235, 0.22);
+
+    border-radius: 999px;
+
+    background: rgba(37, 99, 235, 0.08);
+
+    color: var(--primary);
+
+    font-size: 0.78rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* ==========================================================
+   CTA TITLE
+========================================================== */
+
+.exercise-final-cta-content h2 {
+
+    max-width: 700px;
+
+    margin: 0;
+
+    color: var(--white);
+
+    font-size: clamp(2rem, 4vw, 3.4rem);
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    letter-spacing: -0.03em;
+
+}
+
+
+/* ==========================================================
+   CTA DESCRIPTION
+========================================================== */
+
+.exercise-final-cta-content > p {
+
+    max-width: 700px;
+
+    margin:
+        1.25rem
+        auto
+        0;
+
+    color: var(--gray);
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+}
+
+
+/* ==========================================================
+   CTA ACTIONS
+========================================================== */
+
+.exercise-final-cta-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 1rem;
+
+    margin-top: 2rem;
+
+}
+
+
+/* ==========================================================
+   CTA BUTTON
+========================================================== */
+
+.exercise-final-cta-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 0.65rem;
+
+    min-height: 54px;
+
+    padding: 0.9rem 1.4rem;
+
+    border: 1px solid transparent;
+
+    border-radius: var(--radius-medium);
+
+    font-size: 0.95rem;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+/* ==========================================================
+   PRIMARY BUTTON
+========================================================== */
+
+.exercise-final-cta-button-primary {
+
+    border-color: var(--primary);
+
+    background: var(--primary);
+
+    color: #ffffff;
+
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, 0.22);
+
+}
+
+
+.exercise-final-cta-button-primary:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 18px 38px rgba(37, 99, 235, 0.32);
+
+}
+
+
+/* ==========================================================
+   SECONDARY BUTTON
+========================================================== */
+
+.exercise-final-cta-button-secondary {
+
+    border-color: var(--border);
+
+    background: rgba(255, 255, 255, 0.04);
+
+    color: var(--white);
+
+}
+
+
+.exercise-final-cta-button-secondary:hover {
+
+    transform: translateY(-3px);
+
+    border-color: var(--primary);
+
+    background: rgba(37, 99, 235, 0.08);
+
+    color: var(--white);
+
+}
+
+
+/* ==========================================================
+   BUTTON ARROW
+========================================================== */
+
+.exercise-final-cta-arrow {
+
+    font-size: 1.15rem;
+
+    line-height: 1;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+.exercise-final-cta-button:hover
+.exercise-final-cta-arrow {
+
+    transform: translateX(4px);
+
+}
+
+
+/* ==========================================================
+   KEYBOARD FOCUS
+========================================================== */
+
+.exercise-final-cta-button:focus-visible {
+
+    outline: 2px solid var(--white);
+
+    outline-offset: 4px;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : LARGE TABLETS
+========================================================== */
+
+@media (max-width: 1024px) {
+
+    .exercise-final-cta {
+
+        padding: 5rem 0;
+
+    }
+
+
+    .exercise-final-cta-card {
+
+        min-height: 440px;
+
+        padding: 4rem 2rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : TABLETS
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .exercise-final-cta {
+
+        padding: 4rem 0;
+
+    }
+
+
+    .exercise-final-cta-card {
+
+        min-height: 0;
+
+        padding: 3.5rem 1.5rem;
+
+    }
+
+
+    .exercise-final-cta-icon .icon-circle {
+
+        width: 62px;
+
+        height: 62px;
+
+    }
+
+
+    .exercise-final-cta-content > p {
+
+        font-size: 1rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : MOBILE
+========================================================== */
+
+@media (max-width: 576px) {
+
+    .exercise-final-cta {
+
+        padding: 3.5rem 0;
+
+    }
+
+
+    .exercise-final-cta-card {
+
+        padding: 3rem 1rem;
+
+        border-radius: var(--radius-medium);
+
+    }
+
+
+    .exercise-final-cta-icon {
+
+        margin-bottom: 1rem;
+
+    }
+
+
+    .exercise-final-cta-icon .icon-circle {
+
+        width: 56px;
+
+        height: 56px;
+
+    }
+
+
+    .exercise-final-cta-badge {
+
+        margin-bottom: 0.85rem;
+
+        padding: 0.5rem 0.75rem;
+
+        font-size: 0.7rem;
+
+    }
+
+
+    .exercise-final-cta-content h2 {
+
+        font-size: clamp(1.8rem, 9vw, 2.4rem);
+
+    }
+
+
+    .exercise-final-cta-content > p {
+
+        margin-top: 1rem;
+
+        font-size: 0.95rem;
+
+        line-height: 1.75;
+
+    }
+
+
+    .exercise-final-cta-actions {
+
+        flex-direction: column;
+
+        width: 100%;
+
+        margin-top: 1.75rem;
+
+    }
+
+
+    .exercise-final-cta-button {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE : SMALL PHONES
+========================================================== */
+
+@media (max-width: 380px) {
+
+    .exercise-final-cta {
+
+        padding: 3rem 0;
+
+    }
+
+
+    .exercise-final-cta-card {
+
+        padding: 2.5rem 0.9rem;
+
+    }
+
+
+    .exercise-final-cta-icon .icon-circle {
+
+        width: 52px;
+
+        height: 52px;
+
+    }
+
+
+    .exercise-final-cta-content h2 {
+
+        font-size: 1.75rem;
+
+    }
+
+
+    .exercise-final-cta-content > p {
+
+        font-size: 0.9rem;
+
+    }
+
+
+    .exercise-final-cta-button {
+
+        min-height: 52px;
+
+        padding: 0.85rem 1rem;
+
+        font-size: 0.9rem;
+
+    }
+
+}
