@@ -334,6 +334,8 @@ a:hover .icon-arrow{
 
     --transition:.30s ease;
 
+      --navbar-height:80px;
+
 }
 
 
@@ -351,6 +353,8 @@ body{
     overflow-x:hidden;
 
     line-height:1.6;
+
+        padding-top:calc(var(--navbar-height));
 
 }
 
