@@ -62,7 +62,7 @@ faqItems.forEach(item => {
 /* END OF SECTION 10 */
 /* ===================================================== */
 /* ======================================================
-   NAVBAR V2.0
+   NAVBAR V2.1
 ====================================================== */
 
 const menuToggle = document.querySelector(".menu-toggle");
@@ -70,9 +70,20 @@ const navMenu = document.querySelector(".nav-menu");
 const menuIcon = document.querySelector(".menu-icon");
 const navLinks = document.querySelectorAll(".nav-link");
 
+/* ======================================================
+   DETERMINE CORRECT ICON PATH
+====================================================== */
+
+const iconPath = window.location.pathname.includes("/articles/")
+    ? "../images/icons/"
+    : "images/icons/";
+
 if (menuToggle && navMenu) {
 
-    // Open / Close Menu
+    /* ==================================================
+       OPEN / CLOSE MENU
+    ================================================== */
+
     menuToggle.addEventListener("click", () => {
 
         const isOpen = navMenu.classList.toggle("active");
@@ -84,14 +95,17 @@ if (menuToggle && navMenu) {
         if (menuIcon) {
 
             menuIcon.src = isOpen
-                ? "images/icons/x.svg"
-                : "images/icons/menu.svg";
+                ? `${iconPath}x.svg`
+                : `${iconPath}menu.svg`;
 
         }
 
     });
 
-    // Close menu after clicking a navigation link
+    /* ==================================================
+       CLOSE MENU AFTER CLICKING A LINK
+    ================================================== */
+
     navLinks.forEach(link => {
 
         link.addEventListener("click", () => {
@@ -104,7 +118,7 @@ if (menuToggle && navMenu) {
 
             if (menuIcon) {
 
-                menuIcon.src = "images/icons/menu.svg";
+                menuIcon.src = `${iconPath}menu.svg`;
 
             }
 
@@ -112,7 +126,10 @@ if (menuToggle && navMenu) {
 
     });
 
-    // Close menu when clicking outside
+    /* ==================================================
+       CLOSE MENU WHEN CLICKING OUTSIDE
+    ================================================== */
+
     document.addEventListener("click", (event) => {
 
         const isInsideNav = event.target.closest(".main-nav");
@@ -127,7 +144,7 @@ if (menuToggle && navMenu) {
 
             if (menuIcon) {
 
-                menuIcon.src = "images/icons/menu.svg";
+                menuIcon.src = `${iconPath}menu.svg`;
 
             }
 
@@ -136,7 +153,6 @@ if (menuToggle && navMenu) {
     });
 
 }
-
 /* ==========================================================
    BMI CALCULATOR
 ========================================================== */
